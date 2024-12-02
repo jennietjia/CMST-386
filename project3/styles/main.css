@@ -15,6 +15,8 @@ header {
 }
 footer {
   padding: 20px;
+  background-color: #4caf50;
+  color: #ffffff;
 }
 .grid-layout {
   display: grid;
@@ -84,7 +86,7 @@ nav.breadcrumbs ul li:last-child:after {
 }
 nav.breadcrumbs ul li a {
   text-decoration: none;
-  color: #4caf50;
+  color: #388e3c;
 }
 .cta-button-container {
   display: flex;
