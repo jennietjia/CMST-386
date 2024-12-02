@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="LESS, SASS, CSS Preprocessing, Web Development, Mixins, Variables, Nested Rules">
+    <meta name="description" content="Learn how to implement CSS preprocessing using LESS or SASS, including features like mixins, variables, functions, and nested rules.">
+    <title>Preprocessing - Project 3</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="main-navigation">
+            <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+            <label for="menu-toggle" class="hamburger">&#9776;</label>
+            <ul class="nav-menu">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="project3.html">Project 3</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="content">
+        <section>
+            <h1>CSS Preprocessing</h1>
+            <p>CSS preprocessing can be implemented either on the client-side or server-side. 
+                Client-side preprocessing compiles LESS or SASS files directly in the user's 
+                browser using libraries like less.js, which can simplify development but may 
+                increase load time. Server-side preprocessing, on the other hand, compiles CSS 
+                on the server before delivering it to the browser, using tools like Node.js or 
+                CodeKit, ensuring optimized performance and reduced client workload. Server-side 
+                is generally preferred for production environments as it minimizes browser 
+                computation and enhances overall site speed.</p>
+        </section>
+        <section>
+            <h2>LESS Features</h2>
+            <p>LESS and SASS offer powerful mechanisms to enhance CSS development. Mixins allow 
+                reusable chunks of CSS code, enabling consistent styles and reducing redundancy. 
+                For example, a mixin for rounded corners can be applied to multiple elements. 
+                Variables store values like colors or fonts, making it easier to maintain and 
+                update styles globally. Functions perform calculations or manipulate values, 
+                such as lightening a color or converting units, to streamline complex CSS tasks. 
+                Operators enable mathematical calculations directly within styles, such as 
+                adjusting widths or margins dynamically. Nested Rules mirror the HTML structure, 
+                allowing cleaner and more readable code by grouping related styles hierarchically. 
+                These features collectively make CSS more manageable and efficient.</p>
+            <!-- How I implemented LESS: To do this I used CodeKit to compile my .less files to .css files.
+            The LESS file uses variables, mixins, functions, and nested rules to simplify and optimize CSS development.
+            After compilation, the `main.css` file is linked in the HTML file for browsers to render the styles. -->
+            <!-- LESS compiled using CodeKit -->
+        </section>
+        <a href="#top" class="back-to-top">Back to Top</a>
+    </main>
+    <footer>
+        <nav class="breadcrumbs">
+            <ul>
+                <li><a href="../index.html">Home</a> ></li>
+                <li><a href=project3.html>Project 3</a></li>
+                <li>Preprocessing</li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+</html>
