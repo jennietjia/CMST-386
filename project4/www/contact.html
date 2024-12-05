@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Contact, Jennifer's portfolio, get in touch, web design">
+    <meta name="description" content="Contact form to reach Jennie for web design projects, inquiries, or collaborations.">
+    <meta name="author" content="Jennifer Tjia">
+    <title>Contact Me</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32x32.png">
+    <link rel="stylesheet" href="../css/main.css">
+    <link href="../fontawesome/css/fontawesome.css" rel="stylesheet" />
+  <link href="../fontawesome/css/brands.css" rel="stylesheet" />
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="../www/index.html">
+                <img src="../images/logo.png" alt="Jennifer Tjia's Design Logo">
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../www/index.html">Home</a></li>
+                <li><a href="../www/about.html">About Me</a></li>
+                <li><a href="../www/projects.html">Projects</a></li>
+                <li><a href="../www/blog.html">Blog</a></li>
+                <li><a href="../www/contact.html" class="contact-link">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="content">
+        <h1>Contact Me</h1>
+        <p>If you'd like to collaborate on a project, inquire about my work, or just say hello, please fill out the form below. I look forward to hearing from you!</p>
+
+        <form class="contact-form" action="mailto:your-email@example.com" method="post" enctype="text/plain">
+            <fieldset>
+                <legend>Contact Information</legend>
+                <label for="name">Name *</label>
+                <input type="text" id="name" name="name" placeholder="Jane Doe" required tabindex="1">
+
+                <label for="email">Email *</label>
+                <input type="email" id="email" name="email" placeholder="janedoe@email.com" required tabindex="2">
+
+                <label for="message">Message *</label>
+                <textarea id="message" name="message" placeholder="Your message here..." rows="5" required tabindex="3"></textarea>
+            </fieldset>
+
+            <fieldset>
+                <legend>Preferences</legend>
+                <label for="contact-method">Preferred Contact Method:</label>
+                <select id="contact-method" name="contact-method" tabindex="4">
+                    <option value="email">Email</option>
+                    <option value="phone">Phone</option>
+                </select>
+
+                <div class="checkbox-group">
+                    <label>Project Type:</label>
+                    <input type="checkbox" id="web-design" name="project-type" value="Web Design" tabindex="5">
+                    <label for="web-design">Web Design</label>
+
+                    <input type="checkbox" id="graphic-design" name="project-type" value="Graphic Design" tabindex="6">
+                    <label for="graphic-design">Graphic Design</label>
+
+                    <input type="checkbox" id="other" name="project-type" value="Other" tabindex="7">
+                    <label for="other">Other</label>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>How did you hear about me?</legend>
+                <div class="radio-group">
+                    <input type="radio" id="google" name="referral" value="Google" tabindex="8">
+                    <label for="google">Google</label>
+
+                    <input type="radio" id="social" name="referral" value="Social Media" tabindex="9">
+                    <label for="social">Social Media</label>
+
+                    <input type="radio" id="friend" name="referral" value="Friend" tabindex="10">
+                    <label for="friend">Friend</label>
+
+                    <input type="radio" id="other-referral" name="referral" value="Other" tabindex="11">
+                    <label for="other-referral">Other</label>
+                </div>
+            </fieldset>
+
+            <button type="submit" class="contact-button" tabindex="12">Send Message</button>
+        </form>
+    </section>
+
+    <section class="content">
+        <h2>Contact Information</h2>
+        <ul>
+            <li><strong>Email:</strong> <a href="mailto:jennifertjia@yahoo.com">jennifertjia@yahoo.com</a></li>
+            <li><strong>Phone:</strong> +1 (123) 456-7890</li>
+            <li><strong>Location:</strong> Maryland, USA</li>
+        </ul>
+        <div class="social-icons">
+            <i class="fa-brands fa-instagram fa-xl"></i>
+            <i class="fa-brands fa-twitter fa-xl"></i>
+            <i class="fa-brands fa-facebook fa-xl"></i>
+            <i class="fa-brands fa-tiktok fa-xl"></i>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Jennie. All rights reserved.</p>
+        <p id="date-time"></p>
+        <a href="../www/privacy-policy.html">Privacy Policy</a>
+    </footer>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>
